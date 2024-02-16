@@ -2,6 +2,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
 
+import Home from "./components/Home/Home";
+
 function App() {
   const [nombre, setNombre] = useState("Sergio");
   const [nombreVerificar, setNombreVerificar] = useState("");
@@ -27,6 +29,12 @@ function App() {
       ) : (
         <h1>Los nombres son diferentes</h1>
       )}
+
+      <Home />
+      <Home />
+      <Home />
+      <Home />
+      <Home />
     </div>
   );
 }
