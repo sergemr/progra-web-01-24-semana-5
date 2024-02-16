@@ -1,23 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState} from "react";
 
 function App() {
+
+  const [nombre, setNombre] = useState("Dani");
+  const [nombreVer, setNombreVer] = useState("");
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hola Mundo</h1>
+      
+      <input type="text" onChange={(e)=>{setNombre(e.target.value)}}></input>
+     
+      <input type="text" onChange={(e)=>{setNombreVer(e.target.value)}}></input> 
+
+      {nombre===nombreVer? (
+        <h1> Los nombres son iguales</h1>
+      ):(
+        <h1> Los nombres son diferentes</h1>
+      )}
+
+      <button ></button>
+
+
     </div>
   );
 }
