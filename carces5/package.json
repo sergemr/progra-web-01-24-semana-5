@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "create-react-app": "^5.0.1",
+    "react-app": "^1.1.2",
+    "react-new-app": "^0.3.4"
+  }
+}
